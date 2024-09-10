@@ -15,22 +15,17 @@
 // find: 25
 
 // output: 0
-function repeated(num)
+function repeated_numbers(num,find)
 {
-    let count=0;
-    let unique = [];
+    let count = 0;
     for(let i=0;i<num.length;i++)
     {
-        if(num.includes(num[i]))
+        if(num[i]===find)
         {
-             count++;
-           
+            count++;
         }
         
-
     }
     console.log(count)
-    
-    
 }
- repeated([5,6,11,12,98,5]);
+repeated_numbers([5,6,11,12,98, 5],25)
